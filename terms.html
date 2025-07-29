@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head as your main page -->
+    <title>Terms of Service | Ashutosh Mishra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Include your header/navigation -->
+    
+    <main class="legal-page">
+        <h1>Terms of Service</h1>
+        <p>Effective Date: <span id="terms-date"></span></p>
+        
+        <section>
+            <h2>1. Use of Website</h2>
+            <p>By accessing this portfolio website, you agree to these terms.</p>
+        </section>
+        
+        <section>
+            <h2>2. Intellectual Property</h2>
+            <p>All content on this site is my original work unless otherwise noted.</p>
+        </section>
+        
+        <section>
+            <h2>3. Limitation of Liability</h2>
+            <p>I am not responsible for any damages resulting from use of this site.</p>
+        </section>
+        
+        <section>
+            <h2>4. Changes to Terms</h2>
+            <p>I may update these terms periodically.</p>
+        </section>
+    </main>
+
+    <!-- Include your footer -->
+    
+    <script>
+        document.getElementById('terms-date').textContent = 
+            new Date().toLocaleDateString('en-US', { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            });
+    </script>
+</body>
+</html>
